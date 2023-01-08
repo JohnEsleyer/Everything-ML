@@ -48,6 +48,9 @@ print(tensor3)
 tensor3 = tensor1.mm(tensor2.t())
 print(tensor3)
 ```
+Element-wise vs matrix multiplication 
+http://yetanothermathprogrammingconsultant.blogspot.com/2019/12/elementwise-vs-matrix-multiplication.html
+
 
 ### Indexing and slicing
 You can access and modify individual elements of a tensor using indexing and slicing, similar to how you would with a Python list or numpy array:
@@ -80,7 +83,7 @@ Tensors in PyTorch have a data type and can be move to different devices (such a
 import torch
 
 # Create a tensor with data type int32
-tensor = torch.Tensor([[1,2,3],[4,5,6]], dtype=torch.int32)
+tensor = torch.tensor([[1,2,3],[4,5,6]], dtype=torch.int32)
 print(tensor.dtype)
 
 # Convert the tensor to data type float32
